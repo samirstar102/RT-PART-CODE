@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverlayView">
+            <connections>
+                <outlet property="heightConstraintForFrame" destination="Kwa-w8-1Bj" id="R8O-fx-Txa"/>
+                <outlet property="ivFrame" destination="AKn-1Y-FOg" id="At3-Qp-cpl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kd3-CD-8Nv"/>
+                <outlet property="widthConstraintForFrame" destination="EAl-6p-3XX" id="ZE9-BH-Hp3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AKn-1Y-FOg">
+                    <rect key="frame" x="0.0" y="58" width="320" height="452"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="EAl-6p-3XX"/>
+                        <constraint firstAttribute="height" constant="452" id="Kwa-w8-1Bj"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="AKn-1Y-FOg" secondAttribute="centerY" id="7uL-VO-O7G"/>
+                <constraint firstAttribute="centerX" secondItem="AKn-1Y-FOg" secondAttribute="centerX" id="QR3-uF-g2J"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

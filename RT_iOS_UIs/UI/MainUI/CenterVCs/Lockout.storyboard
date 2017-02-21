@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--LockoutVC-->
+        <scene sceneID="ZCA-nj-OQl">
+            <objects>
+                <viewController storyboardIdentifier="LockoutVC" id="lmf-Og-Lrz" customClass="LockoutVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oGx-Vw-89a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Brw-pZ-fSQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bC8-2f-UKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFt-UR-lVu">
+                                <rect key="frame" x="0.0" y="266" width="320" height="35"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If we can't find you, we can't find your student discounts!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j19-9p-cnQ">
+                                <rect key="frame" x="64" y="309" width="192" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to Settings &gt; Privacy &gt; Location Services and switch RoverTown to ON." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gx0-y4-dmU">
+                                <rect key="frame" x="32" y="350" width="256" height="33"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockout_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Dav-NM-wjA">
+                                <rect key="frame" x="85" y="100" width="150" height="150"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZAu-28-6Nr"/>
+                                    <constraint firstAttribute="width" constant="150" id="u0C-Nj-Phd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.015686274509803921" green="0.33333333333333331" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gx0-y4-dmU" firstAttribute="top" secondItem="j19-9p-cnQ" secondAttribute="bottom" constant="8" id="3qt-ka-Iiq"/>
+                            <constraint firstAttribute="centerX" secondItem="Gx0-y4-dmU" secondAttribute="centerX" id="7up-SQ-eRy"/>
+                            <constraint firstItem="j19-9p-cnQ" firstAttribute="top" secondItem="lFt-UR-lVu" secondAttribute="bottom" constant="8" id="8ab-pa-UDB"/>
+                            <constraint firstAttribute="centerX" secondItem="lFt-UR-lVu" secondAttribute="centerX" id="KWX-2g-c2b"/>
+                            <constraint firstAttribute="trailing" secondItem="lFt-UR-lVu" secondAttribute="trailing" id="Lbj-Yp-vpn"/>
+                            <constraint firstAttribute="centerY" secondItem="lFt-UR-lVu" secondAttribute="centerY" id="NUY-3Z-3VN"/>
+                            <constraint firstItem="j19-9p-cnQ" firstAttribute="width" secondItem="bC8-2f-UKi" secondAttribute="width" multiplier="0.6" id="RXA-38-6oY"/>
+                            <constraint firstAttribute="centerX" secondItem="j19-9p-cnQ" secondAttribute="centerX" id="cKu-yd-pOk"/>
+                            <constraint firstItem="lFt-UR-lVu" firstAttribute="top" secondItem="Dav-NM-wjA" secondAttribute="bottom" constant="16" id="e5L-fi-QlN"/>
+                            <constraint firstItem="Gx0-y4-dmU" firstAttribute="width" secondItem="bC8-2f-UKi" secondAttribute="width" multiplier="0.8" id="eo1-U6-qAw"/>
+                            <constraint firstItem="lFt-UR-lVu" firstAttribute="leading" secondItem="bC8-2f-UKi" secondAttribute="leading" id="goA-aw-3XP"/>
+                            <constraint firstAttribute="centerX" secondItem="Dav-NM-wjA" secondAttribute="centerX" id="qYL-Cn-AxF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="lblBottomText" destination="Gx0-y4-dmU" id="OOc-kS-Zjn"/>
+                        <outlet property="lblMiddleText" destination="j19-9p-cnQ" id="b1b-bk-ncE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xom-E3-wdz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="268"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lockout_icon" width="146" height="146"/>
+    </resources>
+</document>
